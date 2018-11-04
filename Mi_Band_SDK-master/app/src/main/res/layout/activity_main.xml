@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jellygom.mibandsdkdemo.MainActivity">
+
+  <android.support.v7.widget.Toolbar
+      android:id="@+id/my_toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:background="?attr/colorPrimary"
+      android:elevation="4dp">
+
+    <ImageView
+        android:id="@+id/imgIconRecibir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:maxHeight="10dp"
+        android:maxWidth="10dp"
+        android:src="@drawable/logo" />
+
+  </android.support.v7.widget.Toolbar>
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/imgIconbattery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/battery" />
+
+    <TextView
+        android:id="@+id/battery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0%"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:weightSum="1"
+      android:layout_marginLeft="80dp"
+      >
+
+    <ImageView
+        android:id="@+id/imgIconheart"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:maxHeight="10dp"
+        android:maxWidth="10dp"
+        android:src="@drawable/ritmo" />
+
+    <TextView
+        android:id="@+id/heart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="0 bpm"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginTop="60dp"/>
+
+  </LinearLayout>
+
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="100dp"
+      android:weightSum="1">
+
+    <Button
+        android:id="@+id/sincro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.05"
+        android:paddingLeft="1dp"
+        android:paddingRight="2dp"
+        android:layout_gravity="right"
+        android:text="Sincronizar"
+        android:background="@color/colorPrimary"/>
+
+    <Button
+        android:id="@+id/btnBateria"
+        android:background="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_gravity="left"
+        android:layout_weight="0.05"
+        android:text="Batería" />
+
+  </LinearLayout>
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+      <ImageView
+          android:id="@+id/imgIconpulse"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/heartppulse" />
+
+      <TextView
+          android:id="@+id/text"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="20dp"
+          android:textAlignment="center" />
+
+    </LinearLayout>
+
+
+  </ScrollView>
+
+</LinearLayout>

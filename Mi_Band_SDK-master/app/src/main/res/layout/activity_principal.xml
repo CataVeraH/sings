@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jellygom.mibandsdkdemo.Principal">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp">
+
+        <ImageView
+            android:id="@+id/imgIconRecibir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxHeight="10dp"
+            android:maxWidth="10dp"
+            android:src="@drawable/logo" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <EditText
+        android:id="@+id/txtLimite_superior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:hint="@string/limite_superior"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/txtLimite_inferior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:inputType="number"
+        android:hint="@string/limite_inferior"
+        android:layout_below="@id/txtLimite_superior"/>
+
+    <EditText
+        android:id="@+id/txtNumero_Emergencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:inputType="text"
+        android:hint="Numero Emergencia(+56912345678)"
+        android:layout_below="@id/txtLimite_inferior"/>
+
+    <Button
+        android:id="@+id/btnContinuar_principal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNumero_Emergencia"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:background="@color/colorPrimary"
+        android:onClick="continuar"
+        android:text="@string/continuar" />
+</RelativeLayout>
